@@ -18,7 +18,7 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <Link 
             to="/" 
-            className="text-gray-700 hover:text-fun-pink transition-colors duration-200"
+            className="px-4 py-2 rounded-md text-white bg-fun-blue hover:bg-fun-blue/90 transition-colors duration-200 font-medium shadow-sm"
           >
             Home
           </Link>
