@@ -22,24 +22,6 @@ const Header = () => {
           >
             Home
           </Link>
-          <a 
-            href="#" 
-            className="text-gray-700 hover:text-fun-pink transition-colors duration-200"
-          >
-            About
-          </a>
-          <a 
-            href="#" 
-            className="text-gray-700 hover:text-fun-pink transition-colors duration-200"
-          >
-            Contact
-          </a>
-          <a 
-            href="#" 
-            className="bg-fun-pink text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-all shadow-sm"
-          >
-            Submit a Generator
-          </a>
         </nav>
         
         <button className="block md:hidden text-gray-700">

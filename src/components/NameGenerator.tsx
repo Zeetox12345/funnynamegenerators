@@ -49,17 +49,15 @@ const NameGenerator = ({ category, accentColor }: NameGeneratorProps) => {
       }
     }
     
-    // Simulate loading
-    setTimeout(() => {
-      setNames(getRandomNames(category, 10));
-      setIsGenerating(false);
-      setHasGenerated(true);
-      
-      // Scroll to results if they're now visible
-      if (resultRef.current && hasGenerated) {
-        resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-    }, 600);
+    // Generate names immediately without delay
+    setNames(getRandomNames(category, 10));
+    setIsGenerating(false);
+    setHasGenerated(true);
+    
+    // Scroll to results if they're now visible
+    if (resultRef.current && hasGenerated) {
+      resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
   };
   
   const copyToClipboard = (name: string) => {
