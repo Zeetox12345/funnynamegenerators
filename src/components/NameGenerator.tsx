@@ -71,12 +71,12 @@ const NameGenerator = ({ category, accentColor }: NameGeneratorProps) => {
   };
   
   return (
-    <div className="w-full max-w-3xl mx-auto">
+    <div className="w-full max-w-3xl mx-auto px-4">
       <div className="text-center mb-8">
         <button
           onClick={generateNames}
           disabled={isGenerating}
-          className={`generate-button ${btnColorClass} text-white font-medium rounded-lg px-8 py-3 shadow-sm focus:outline-none focus:ring-4 transition-all text-lg`}
+          className={`generate-button ${btnColorClass} text-white font-medium rounded-lg px-6 sm:px-8 py-3 shadow-sm focus:outline-none focus:ring-4 transition-all text-lg`}
         >
           {isGenerating ? (
             <span className="flex items-center">
@@ -109,10 +109,10 @@ const NameGenerator = ({ category, accentColor }: NameGeneratorProps) => {
                 }}
               >
                 <div className="flex justify-between items-center">
-                  <p className="text-lg font-medium">{name}</p>
+                  <p className="text-lg font-medium break-words overflow-hidden">{name}</p>
                   <button
                     onClick={() => copyToClipboard(name)}
-                    className="text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100 p-1 hover:text-gray-700 rounded focus:outline-none"
+                    className="text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100 p-1 hover:text-gray-700 rounded focus:outline-none flex-shrink-0 ml-2"
                     aria-label="Copy to clipboard"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

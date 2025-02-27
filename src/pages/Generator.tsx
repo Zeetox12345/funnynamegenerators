@@ -53,7 +53,7 @@ const Generator = () => {
   };
   
   return (
-    <div ref={pageRef} className="min-h-screen flex flex-col">
+    <div ref={pageRef} className="min-h-screen flex flex-col overflow-x-hidden">
       <Header />
       
       <main className="flex-grow">
@@ -61,8 +61,8 @@ const Generator = () => {
         <section className={`${getBgColorClass(generator.color)} pt-16 pb-10 px-4 md:px-8 border-b border-gray-200`}>
           <div className="container mx-auto max-w-4xl opacity-0 animate-slide-down" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">{generator.title}</h1>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto">{generator.description}</p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">{generator.title}</h1>
+              <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">{generator.description}</p>
             </div>
           </div>
         </section>
