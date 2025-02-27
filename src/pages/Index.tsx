@@ -16,14 +16,14 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col w-full">
       <Header />
       
-      <main className="flex-grow">
+      <main className="flex-grow w-full">
         {/* Hero Section */}
         <section 
           ref={heroRef}
-          className="hero-gradient pt-20 pb-16 px-4 md:px-8 opacity-0 transition-opacity duration-700"
+          className="hero-gradient pt-20 pb-16 px-4 md:px-8"
         >
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
