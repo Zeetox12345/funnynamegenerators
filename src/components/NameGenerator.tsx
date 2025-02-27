@@ -54,10 +54,7 @@ const NameGenerator = ({ category, accentColor }: NameGeneratorProps) => {
     setIsGenerating(false);
     setHasGenerated(true);
     
-    // Scroll to results if they're now visible
-    if (resultRef.current && hasGenerated) {
-      resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
+    // Removed the scrolling behavior
   };
   
   const copyToClipboard = (name: string) => {
