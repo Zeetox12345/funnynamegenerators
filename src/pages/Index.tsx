@@ -26,10 +26,10 @@ const Index = () => {
           className="hero-gradient pt-20 pb-16 px-4 md:px-8"
         >
           <div className="container mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Welcome to <span className="text-fun-pink">funny</span>name<span className="text-fun-blue">generators</span><span className="text-gray-500">.com</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Welcome to <span className="text-fun-pink">funny</span>name<span className="text-fun-blue">generators</span><span className="text-gray-500 hidden xs:inline">.com</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
               We Make Boring Names Hilarious!
             </p>
             <div className="flex flex-wrap justify-center gap-4">
