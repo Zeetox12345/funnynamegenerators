@@ -1,3 +1,4 @@
+
 import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { generators } from "../data/generators";
@@ -33,7 +34,7 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
               <Link 
-                to="/cabin" 
+                to="/generator/cabin" 
                 className="bg-fun-pink text-white px-5 py-2.5 md:px-6 md:py-3 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1 font-medium text-sm md:text-base"
               >
                 Try a Generator
@@ -119,7 +120,7 @@ const Index = () => {
               With thousands of hilarious possibilities, your next laugh is just a click away.
             </p>
             <Link 
-              to="/batman" 
+              to="/generator/batman" 
               className="inline-block bg-fun-purple text-white px-6 py-3 md:px-8 md:py-4 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1 font-medium text-base md:text-lg"
             >
               Try the Batman Name Generator
