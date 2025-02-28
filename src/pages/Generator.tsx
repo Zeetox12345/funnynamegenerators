@@ -84,6 +84,10 @@ const Generator = () => {
               accentColor={generator.color}
             >
               <p className="text-lg">{generator.article.intro}</p>
+              <div className="mt-4 text-gray-700">
+                <p>Our {generator.title.toLowerCase()} was designed with both fun and functionality in mind. It draws inspiration from popular culture, linguistics, and the unique characteristics of {generator.title.split(' ')[1].toLowerCase()} naming conventions to create names that are both entertaining and practical.</p>
+                <p className="mt-2">Whether you're looking for inspiration, entertainment, or a practical solution to your naming needs, our generator offers endless possibilities with just a click.</p>
+              </div>
             </ContentSection>
             
             <ContentSection 
@@ -91,6 +95,17 @@ const Generator = () => {
               accentColor={generator.color}
             >
               <p>{generator.article.whatIsGood}</p>
+              <div className="mt-4 text-gray-700">
+                <p>The art of naming {generator.title.split(' ')[1].toLowerCase()} involves balancing several key elements:</p>
+                <ul className="list-disc pl-5 mt-2 space-y-1">
+                  <li><span className="font-medium">Memorability</span> - A name that sticks in the mind and creates an immediate impression</li>
+                  <li><span className="font-medium">Relevance</span> - Connection to the {generator.title.split(' ')[1].toLowerCase()}'s purpose, appearance, or character</li>
+                  <li><span className="font-medium">Uniqueness</span> - Standing out from common or overused names</li>
+                  <li><span className="font-medium">Pronounceability</span> - Easy to say and share with others</li>
+                  <li><span className="font-medium">Humor</span> - The perfect balance of cleverness without being too forced</li>
+                </ul>
+                <p className="mt-3">Our generator carefully balances these elements to create names that hit the sweet spot between humor, creativity, and practicality.</p>
+              </div>
             </ContentSection>
             
             <ContentSection 
@@ -98,6 +113,17 @@ const Generator = () => {
               accentColor={generator.color}
             >
               <p>{generator.article.howToUse}</p>
+              <div className="mt-4 text-gray-700">
+                <p>Here are some pro tips to get the most out of our generator:</p>
+                <ol className="list-decimal pl-5 mt-2 space-y-1">
+                  <li>Click "Generate Names" multiple times to explore different naming styles and themes</li>
+                  <li>Save your favorites for comparison before making a final decision</li>
+                  <li>Consider your audience - what might seem hilarious to you could be confusing to others</li>
+                  <li>Test potential names with friends or family for feedback</li>
+                  <li>Mix and match elements from different generated names to create your perfect custom name</li>
+                </ol>
+                <p className="mt-3">Remember, the perfect name often appears when you least expect it, so don't be afraid to keep exploring the possibilities!</p>
+              </div>
             </ContentSection>
             
             <ContentSection 
@@ -105,6 +131,11 @@ const Generator = () => {
               accentColor={generator.color}
             >
               <p>{generator.article.traditions}</p>
+              <div className="mt-4 text-gray-700">
+                <p>The evolution of {generator.title.split(' ')[1].toLowerCase()} naming practices reflects broader cultural trends and changing attitudes toward humor and creativity. Today's naming practices often blend these traditions with contemporary pop culture references and internet humor.</p>
+                <p className="mt-2">Regional differences also play a significant role in {generator.title.split(' ')[1].toLowerCase()} naming conventions. What's considered clever in one region might be viewed differently in another, demonstrating how cultural context shapes our perception of names.</p>
+                <p className="mt-2">Our generator draws inspiration from these diverse traditions while adding modern twists that resonate with today's sensibilities.</p>
+              </div>
             </ContentSection>
             
             <ContentSection 
@@ -122,6 +153,19 @@ const Generator = () => {
                     <span className="font-medium">{name}</span>
                   </div>
                 ))}
+              </div>
+              
+              <div className="mt-4 text-gray-700">
+                <p>These popular names have stood the test of time for good reason. They exemplify the perfect balance of humor, relevance, and memorability that makes a {generator.title.split(' ')[1].toLowerCase()} name truly outstanding.</p>
+                <p className="mt-2">Notice how many of these names use techniques like:</p>
+                <ul className="list-disc pl-5 mt-2 space-y-1">
+                  <li>Clever wordplay and puns</li>
+                  <li>Cultural references that resonate with wide audiences</li>
+                  <li>Unexpected combinations of concepts</li>
+                  <li>Alliteration and rhythmic patterns that make them satisfying to say</li>
+                </ul>
+                <p className="mt-3">Use these popular examples as inspiration, but don't be afraid to forge your own path. The best names often come from thinking outside the box and bringing your unique perspective to the naming process.</p>
+                <p className="mt-3">Our generator creates endless variations that build on these proven formulas while introducing fresh elements to keep your names original and engaging.</p>
               </div>
             </ContentSection>
           </div>
