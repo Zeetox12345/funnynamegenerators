@@ -26,30 +26,6 @@ const GeneratorCard = ({ id, title, description, color, icon, index }: Generator
   
   // Calculate delay for staggered animation
   const delay = 0.1 + (index * 0.05);
-
-  // Custom SEO text based on generator id
-  const getSeoText = () => {
-    switch(id) {
-      case 'cabin':
-        return "Perfect for vacation rentals & Airbnb listings";
-      case 'warrior':
-        return "Great for gaming & RPG character creation";
-      case 'batman':
-        return "Ideal for comic fan fiction & cosplay personas";
-      case 'strawberry':
-        return "Perfect for food blogs & culinary branding";
-      case 'axolotl':
-        return "Great for exotic pet owners & aquarium enthusiasts";
-      case 'bait':
-        return "Ideal for fishing businesses & tackle shops";
-      case 'cafe':
-        return "Perfect for coffee shop startups & food trucks";
-      case 'bmw':
-        return "Great for car clubs & automotive forums";
-      default:
-        return "10 new names per click";
-    }
-  };
   
   return (
     <div 
@@ -72,7 +48,7 @@ const GeneratorCard = ({ id, title, description, color, icon, index }: Generator
             <p className="text-gray-600 text-sm flex-1">{description}</p>
             
             <div className="mt-4 flex justify-between items-center">
-              <span className="text-sm text-gray-500">{getSeoText()}</span>
+              <span className="text-sm text-gray-500">10 new names per click</span>
               <span className="inline-flex items-center justify-center rounded-full bg-gray-100 px-2.5 py-0.5 text-gray-700 text-xs">
                 Popular
               </span>
