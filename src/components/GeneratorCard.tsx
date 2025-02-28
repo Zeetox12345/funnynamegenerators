@@ -1,4 +1,3 @@
-
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -38,7 +37,7 @@ const GeneratorCard = ({ id, title, description, color, icon, index }: Generator
         animation: 'fade-in 0.5s ease-out forwards',
       }}
     >
-      <Link to={`/generator/${id}`} className="block h-full">
+      <Link to={`/${id}`} className="block h-full">
         <div className="h-full flex flex-col">
           <div className={`h-12 ${bgColorClass} flex items-center px-4`}>
             <span className="text-lg font-medium truncate">{title.split(' ')[0]}</span>
